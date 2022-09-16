@@ -4,36 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Meu Portifólio</title>
 </head>
 <body>
-    <h4>Indice</h4>
-    <ul>
-        <li><a href="#quem-sou">Quem sou</a></li>        
-        <li><a href="#hab-org">Habilidades</a></li>
-        <li><a href="#site-gosto">Sites que gosto</a></li><br>               
-    </ul>
-    <h1><strong>Antonio Lisboa de Souza Neto</strong></h1>
-    <img src="profile.jpeg" alt="Minha imagem" width="300px">
-    <p id="quem-sou">Apaixonado por tecnologia desde criança, iniciei minha jornada na área de Redes de Computadores, onde atuei por 2 anos em um provedor de internet.</p><br>
-    <a href="https://www.linkedin.com/in/souza-neto/" target="_blank">Linkedin</a>
-    <a href="https://github.com/souza-neto" target="_blank">Github</a><br>
-    <p id="hab-org">Habilidades que mais me orgulho</p>
-    <ul>
-        <li>Persistência</li>
-        <li>Colaboração</li>
-        <li>Comprometimento</li>
-    </ul>
-    <p>Outras Habilidades</p>
-    <ul>  
-    <li>Git e Github</li>
-    <li>Unix e Bash</li>
-    </ul><br>
-    <p id="site-gosto">Sites que gosto</p>
-    <ul>
-        <li><a href="https://diolinux.com.br/">Diolinux</a></li>
-        <li><a href="https://rachacuca.com.br/">Rachacuca</a></li>
-        <li><a href="https://ge.globo.com/futebol/times/flamengo/"> Esporte </a></li>
-    </ul>
+    <div class="main">
+        <header>
+            <h1>Meu Portifólio</h1>
+                <div class="menu-indice">
+                    <a href="#quem-sou" class="buttom-index">Quem sou</a>       
+                    <a href="#hab-org" class="buttom-index">Habilidades</a>
+                    <a href="https://github.com/souza-neto?tab=repositories" class="buttom-index" target="_blank">Projetos</a>
+                    <a href="#site-gosto" class="buttom-index">Sites que gosto</a>     
+                    </div>   
+        </header>
+            
+        <section class="card">
+            <div class="text-card">
+                <h1 id="name-full">Antonio Lisboa de Souza Neto</h1>    
+                <p id="quem-sou">Tenho 23 anos, moro na cidade de Baraúna/RN. Apaixonado por tecnologia desde criança, iniciei minha jornada na área de Redes de Computadores, onde atuei por 2 anos em um provedor de internet.</p>
+                <a href="https://www.linkedin.com/in/souza-neto/" target="_blank" id="linkedin">Linkedin</a>
+                <a href="https://github.com/souza-neto" target="_blank" id="github">Github</a>
+            </div>
+            <div class="profile-card">
+                <img src="profile.jpeg" alt="Minha imagem" id="img-profile">
+            </div>
+        </section>
+
+        <section class="card-hab">
+            <div>
+            <h2 id="hab-org">Habilidades que mais me orgulho:</h2>
+                <a class="buttom-hab"> Persistência</a>
+                <a class="buttom-hab"> Colaboração</a>
+                <a class="buttom-hab">Comprometimento</a>        
+            <h2 id="hab-outr">Outras Habilidades:</h2> 
+                <a class="buttom-hab">Git e Github</a>
+                <a class="buttom-hab">Unix e Bash</a>
+            </div>
+        </section>
+        <section class="links-site">
+        <h2 id="site-gosto">Sites que gosto:</h2>
+            <a href="https://diolinux.com.br/" class="detail-site">Diolinux</a>
+            <a href="https://rachacuca.com.br/" class="detail-site">Rachacuca</a>
+            <a href="https://ge.globo.com/futebol/times/flamengo/" class="detail-site">Globo Esporte </a>
+        </section>
+    </div>
 </body>
 </html>
